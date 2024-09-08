@@ -26,7 +26,7 @@ class _DocAppState extends State<DocApp> {
             scaffoldBackgroundColor: Colors.white,
           ),
           debugShowCheckedModeBanner: false,
-          initialRoute: Routes.onBoardingScreen,
+          initialRoute: Routes.loginScreen,
           // initialRoute: isLoggedInUser ? Routes.homeScreen : Routes.loginScreen,
           onGenerateRoute: widget.appRouter.generateRoute,
         ));

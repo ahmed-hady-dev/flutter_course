@@ -11,7 +11,7 @@ class GetStartedButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextButton(
       onPressed: () {
-        context.pushNamed(Routes.onBoardingScreen);
+        context.pushNamed(Routes.loginScreen);
       },
       style: ButtonStyle(
           tapTargetSize: MaterialTapTargetSize.shrinkWrap,
