@@ -9,7 +9,7 @@ import '../../core/theming/styles.dart';
 
 class OnBoardingScreen extends StatelessWidget {
   const OnBoardingScreen({super.key});
-
+// add the onBoarding screen
   @override
   Widget build(BuildContext context) {
     return Scaffold(

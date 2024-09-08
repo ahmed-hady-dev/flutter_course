@@ -5,9 +5,15 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'core/routing/routes.dart';
 import 'core/theming/colors.dart';
 
-class DocApp extends StatelessWidget {
+class DocApp extends StatefulWidget {
   const DocApp({super.key, required this.appRouter});
   final AppRouter appRouter;
+
+  @override
+  State<DocApp> createState() => _DocAppState();
+}
+
+class _DocAppState extends State<DocApp> {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
@@ -22,7 +28,7 @@ class DocApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           initialRoute: Routes.onBoardingScreen,
           // initialRoute: isLoggedInUser ? Routes.homeScreen : Routes.loginScreen,
-          onGenerateRoute: appRouter.generateRoute,
+          onGenerateRoute: widget.appRouter.generateRoute,
         ));
   }
 }
